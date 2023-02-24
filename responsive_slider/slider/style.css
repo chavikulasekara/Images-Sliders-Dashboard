@@ -1,0 +1,182 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    position: relative;
+    width: 35%;
+
+  
+}
+
+
+
+.imagee{
+    display: flex;
+}
+
+
+.slider img{
+    width: 150%;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole Doc */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 52, 37);
+}
+
+/* Slider */
+.slider{
+ position:absolute;
+    width: 60%;
+    overflow: hidden;
+}
+
+.imagee{
+    display: flex;
+    width: 100%;
+}
+
+.imagee img{
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+    transition: all 0.5s ease-in;
+}
+
+.imagee input{
+    display: none;
+}
+
+
+.squares{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.squares label{
+    /* position: relative; */
+   border-radius: 4%;
+    height: 20px;
+    width: 20px;
+    border: rgb(255, 255, 255) solid 3px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.squares label:hover{
+    background-color: aliceblue;
+}
+
+#im1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#im2:checked ~ .img2{
+    margin-left: -100%;
+}
+
+#im3:checked ~ .img3{
+    margin-left: -200%;
+}
+
+#im4:checked ~ .img4{
+    margin-left: -300%;
+}
+
+@media(max-width:1550px){
+    .slider{
+        width: 50%;
+    }
+
+    .imagee img{
+        height: 700px;
+        width: 100%;
+    }
+}
+
+@media(max-width:1380px){
+    .slider{
+        width: 45%;
+    }
+
+    .imagee img{
+        height: 600px;
+        width: 100%;
+    }
+}
+
+@media(max-width:1250px){
+    .slider{
+        width: 40%;
+    }
+
+    .imagee img{
+        height: 500px;
+        width: 100%;
+    }
+}
+
+@media(max-width:1080px){
+    .slider{
+        width: 40%;
+    }
+
+    .imagee img{
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@media(max-width:920px){
+    .slider{
+        width: 55%;
+    }
+
+    .imagee img{
+        height: 360px;
+        width: 100%;
+    }
+}
+
+@media(max-width:620px){
+    .slider{
+        width: 55%;
+    }
+
+    .imagee img{
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media(max-width:580px){
+    .slider{
+        width: 50%;
+    }
+
+    .imagee img{
+        height: 300px;
+        width: 100%;
+    }
+}
